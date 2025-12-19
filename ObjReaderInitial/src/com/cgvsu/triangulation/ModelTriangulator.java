@@ -8,12 +8,12 @@ import java.util.ArrayList;
 
 public class ModelTriangulator {
 
-    // Статический метод для удобного использования
+    // статический метод для удобного использования
     public static TriangulatedModel triangulate(Model model) {
         return new TriangulatedModel(model);
     }
 
-    // Альтернативный метод с валидацией
+    // альтернативный метод с валидацией
     public static TriangulatedModel triangulateWithValidation(Model model) {
         if (model == null) {
             throw new IllegalArgumentException("Model cannot be null");
@@ -26,7 +26,7 @@ public class ModelTriangulator {
         return new TriangulatedModel(model);
     }
 
-    // Метод для подсчета треугольников после триангуляции
+    // метод для подсчета треугольников после триангуляции
     public static int countTrianglesAfterTriangulation(Model model) {
         int totalTriangles = 0;
 

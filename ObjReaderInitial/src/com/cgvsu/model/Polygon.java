@@ -14,7 +14,7 @@ public class Polygon {
         normalIndices = new ArrayList<>();
     }
 
-    // Конструктор для удобного создания треугольников
+    // кнструктор для удобного создания треугольников
     public Polygon(int v1, int v2, int v3) {
         this();
         vertexIndices.add(v1);
@@ -22,7 +22,7 @@ public class Polygon {
         vertexIndices.add(v3);
     }
 
-    // Конструктор для треугольников с текстурами и нормалями
+    // конструктор для треугольников с текстурами и нормалями
     public Polygon(int v1, int v2, int v3,
                    int t1, int t2, int t3,
                    int n1, int n2, int n3) {
@@ -80,7 +80,7 @@ public class Polygon {
         return normalIndices;
     }
 
-    // Полезные методы
+    // полезные методы
     public boolean isTriangle() {
         return vertexIndices.size() == 3;
     }
